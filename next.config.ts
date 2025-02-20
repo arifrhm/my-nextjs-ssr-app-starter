@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+import { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+export const nextConfig: NextConfig = {
+  serverRuntimeConfig: {},
+  publicRuntimeConfig: {},
 };
 
-export default nextConfig;
+module.exports = nextConfig;
